@@ -123,8 +123,6 @@ export function checkAuthState() {
       if (user) {
         const displayName = user.displayName || user.email;
         $("#welcomeMessage").text(`Hello, ${displayName}!`);
-      } else {
-        window.location.href = "index.html";
       }
     }
   });
