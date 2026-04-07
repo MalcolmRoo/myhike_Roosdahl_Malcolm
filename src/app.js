@@ -43,10 +43,10 @@ function showName() {
   // Wait until Firebase Auth finishes checking the user's auth state
   onAuthReady(async (user) => {
     // If no user is logged in, redirect to the login page
-    if (!user) {
-      location.href = "index.html";
-      return; // Stop execution
-    }
+    // if (!user) {
+    //   location.href = "index.html";
+    //   return; // Stop execution
+    // }
 
     // Get the user's Firestore document from the "users" collection
     // Document ID is the user's unique UID
